@@ -1,0 +1,178 @@
+/*FUENTES*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --fam-f-primary: 'Montserrat', sans-serif;
+
+    --fam-f-second: 'Space Mono', monospace;
+    --fam-f-third: 'Inconsolata', monospace;
+
+    --fw-reg: 400;
+    --fw-bold: 700;
+    --fw-ligth: 300;
+
+    --clr-light: #fff;
+    --clr-darks: #3C3C3C;
+    --clr-mid: #a7a7a7;
+
+
+    --fs-h1: 3rem;
+    --fs-h2: 1.125rem;
+    --fs-p: 1.58rem;
+    --fs-body: 1.125rem;
+
+}
+
+html {
+    max-width: 1440px;
+}
+
+body {
+    background-color: var(--clr-light);
+
+}
+
+.contenedor {
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: var(--clr-darks);
+
+}
+
+.error {
+    font-family: var(--fam-f-third);
+    font-size: var(--fs-h2);
+    font-weight: var(--fw-bold);
+    letter-spacing: -0.13em;
+}
+
+.contenedor-error {
+    display: flex;
+    margin-top: 10%;
+}
+
+.img-spanta {
+    max-width: 600px;
+
+}
+
+.img-spanta img {
+    width: 100%;
+    margin: auto;
+}
+
+.texto-error {
+    width: 50%;
+    padding-left: 10%;
+    color: var(--clr-darks);
+
+
+}
+
+.texto-error h1 {
+    font-family: var(--fam-f-second);
+    font-size: var(--fs-h1);
+}
+
+.texto-error p {
+    font-family: var(--fam-f-second);
+    font-size: var(--fs-p);
+    font-weight: var(--fw-ligth);
+    padding-top: 10%;
+    padding-bottom: 10%;
+    width: 80%;
+}
+
+
+
+.boton {
+    width: 45%;
+    padding: 5%;
+    color: var(--clr-light);
+    font-family: var(--fam-f-second);
+    background: var(--clr-darks);
+    border: none;
+    
+}
+
+
+.footer p{
+    margin-top: 20%;
+    text-align: center;
+    font-family: var(--fam-f-primary);
+    font-weight: var(--fw-bold);
+    color: var(--clr-mid);
+}
+.footer a{
+text-decoration: none;
+color: rgba(226, 27, 226, 0.582);
+}
+
+.footer a:hover{
+    color:rebeccapurple;
+}
+
+@media (min-width: 800px) {
+   
+    .img-spanta {
+        max-width: 400px;
+    
+    }
+    
+}
+
+
+
+
+@media (max-width: 600px) {
+   :root{
+    --fs-h1: 2.3rem;
+    --fs-h2: 1.125rem;
+    --fs-p: .9rem;
+    --fs-body: .7rem;
+   }
+    .contenedor-error {
+        padding-top: 2em;
+        display: flex;
+        flex-direction: column;
+   
+    }
+    
+    
+    .texto-error {
+        width: 100%;
+        padding-left: 10%;
+        color: var(--clr-darks);
+    
+    
+    }
+    
+  
+    
+    
+    .boton {
+        width: 60%;
+        margin-top: 3em;
+        padding: 5%;
+        font-size:var(--fs-body);
+        color: var(--clr-light);
+       
+    }
+    
+    
+    .footer p{
+       font-size: var(--fs-body);
+       
+    }
+    
+    
+}
